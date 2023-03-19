@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Kaushan+Script&family=Open+Sans&family=Merienda&family=Montserrat");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-animation {
+  transition: all 0.7s ease-in-out;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button {
+  background-color: #dc2626;
+  color: #f3e9e9;
+  border-radius: 0.75rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid #f3e9e9;
+}
+
+.button:hover {
+  color: #dc2626;
+  border-color: #dc2626;
+  background-color: #f3e9e9;
+  @apply hover-animation;
 }
